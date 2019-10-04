@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://wendytest123.sharepoint.com/sites/lee/Pictures/Forms/Thumbnails.aspx",
+      "customActions": {
+        "ad1d4fa8-7b84-477d-983b-7b2bfb5c9321": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    },
+    "myExtension": {
+      "pageUrl": "https://wendytest123.sharepoint.com/sites/lee/Pictures/Forms/Thumbnails.aspx",
+      "customActions": {
+        "ad1d4fa8-7b84-477d-983b-7b2bfb5c9321": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    }
+  }
+}
