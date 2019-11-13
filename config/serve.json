@@ -4,7 +4,7 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://wendytest123.sharepoint.com/sites/lee/Pictures/Forms/Thumbnails.aspx",
+      "pageUrl": "https://wendytest123.sharepoint.com/sites/lee/Lists/TestList/AllItems.aspx",
       "customActions": {
         "ad1d4fa8-7b84-477d-983b-7b2bfb5c9321": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
@@ -16,7 +16,7 @@
       }
     },
     "myExtension": {
-      "pageUrl": "https://wendytest123.sharepoint.com/sites/lee/Pictures/Forms/Thumbnails.aspx",
+      "pageUrl": "https://wendytest123.sharepoint.com/sites/lee/Lists/TestList/AllItems.aspx",
       "customActions": {
         "ad1d4fa8-7b84-477d-983b-7b2bfb5c9321": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",

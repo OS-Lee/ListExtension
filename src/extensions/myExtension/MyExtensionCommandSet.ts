@@ -28,6 +28,7 @@ export default class MyExtensionCommandSet extends BaseListViewCommandSet<IMyExt
   @override
   public onInit(): Promise<void> {
     Log.info(LOG_SOURCE, 'Initialized MyExtensionCommandSet');
+    
     return Promise.resolve();
   }
 
@@ -38,16 +39,21 @@ export default class MyExtensionCommandSet extends BaseListViewCommandSet<IMyExt
       // This command should be hidden unless exactly one row is selected.
       compareOneCommand.visible = event.selectedRows.length === 1;
     }
+    
   }
 
   @override
   public onExecute(event: IListViewCommandSetExecuteEventParameters): void {
     switch (event.itemId) {
       case 'COMMAND_1':
-        Dialog.alert(`${this.properties.sampleTextOne}`);
+        console.log(this.context.pageContext.legacyPageContext);
+        var viewId=this.context.pageContext.legacyPageContext.viewId;
+        debugger;
+        Dialog.alert(viewId);
         break;
       case 'COMMAND_2':
-        Dialog.alert(`${this.properties.sampleTextTwo}`);
+      console.log(this.context.pageContext.legacyPageContext);
+      Dialog.alert(`${this.properties.sampleTextTwo}`);
         break;
       default:
         throw new Error('Unknown command');
