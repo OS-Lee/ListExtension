@@ -9,10 +9,19 @@
           "manifest": "./src/extensions/myExtension/MyExtensionCommandSet.manifest.json"
         }
       ]
+    },
+    "second-command-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/secondCommand/SecondCommandCommandSet.js",
+          "manifest": "./src/extensions/secondCommand/SecondCommandCommandSet.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "MyExtensionCommandSetStrings": "lib/extensions/myExtension/loc/{locale}.js"
+    "MyExtensionCommandSetStrings": "lib/extensions/myExtension/loc/{locale}.js",
+    "SecondCommandCommandSetStrings": "lib/extensions/secondCommand/loc/{locale}.js"
   }
 }

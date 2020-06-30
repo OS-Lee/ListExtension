@@ -4,7 +4,7 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://wendytest123.sharepoint.com/sites/lee/Lists/TestList/AllItems.aspx",
+      "pageUrl": "https://wendytest123.sharepoint.com/sites/lee/Pictures/Forms/MediaListView.aspx",
       "customActions": {
         "ad1d4fa8-7b84-477d-983b-7b2bfb5c9321": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
@@ -16,9 +16,21 @@
       }
     },
     "myExtension": {
-      "pageUrl": "https://wendytest123.sharepoint.com/sites/lee/Lists/TestList/AllItems.aspx",
+      "pageUrl": "https://wendytest123.sharepoint.com/sites/lee/Pictures/Forms/MediaListView.aspx",
       "customActions": {
         "ad1d4fa8-7b84-477d-983b-7b2bfb5c9321": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    },
+    "secondCommand": {
+      "pageUrl": "https://wendytest123.sharepoint.com/sites/lee/Pictures/Forms/MediaListView.aspx",
+      "customActions": {
+        "c23ec511-c186-494d-a598-0fe09b5461a7": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
           "properties": {
             "sampleTextOne": "One item is selected in the list",
